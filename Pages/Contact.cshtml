@@ -1,0 +1,35 @@
+﻿@page
+@model ContactModel
+@{
+    ViewData["Title"] = "Contact";
+}
+<h2>Contacto</h2>
+
+<iframe width="600" height="500" id="gmap_canvas"
+        src="https://maps.google.com/maps?q=itla&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+        scrolling="no" marginheight="0" marginwidth="0"></iframe>
+<style>
+    .mapouter {
+        position: relative;
+        height: 300px;
+        width: 500px;
+    }
+
+    .gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        height: 300px;
+        width: 500px;
+    }
+</style>
+<address>
+    Lorem ipsum dolor sit amet,<br />
+    consectetur adipiscing elit,<br />
+    <abbr title="eiusmod">P:</abbr>
+    425-555-0100
+</address>
+
+<address>
+    <strong>Ipsum:</strong> <a href="mailto:lorem@ipsum.com">lorem@ipsum.com</a><br />
+    <strong>Dolor:</strong> <a href="mailto:lorem@ipsum.com">lorem@ipsum.com</a>
+</address>
